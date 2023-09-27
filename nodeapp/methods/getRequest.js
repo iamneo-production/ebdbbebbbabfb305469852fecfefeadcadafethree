@@ -5,7 +5,7 @@ module.exports = (req, res) => {
     /^[0-9A-F]{8}-[0-9A-F]{4}-4[0-9A-F]{3}-[89AB][0-9A-F]{3}-[0-9A-F]{12}$/i
   );
 
-  if (req.url === "/api/customer") {
+  if (req.url === "/api/customers") {
     res.statusCode = 200;
     res.setHeader("Content-Type", "application/json");
     res.write(JSON.stringify(req.customers));
